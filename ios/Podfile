@@ -1,3 +1,6 @@
+source 'https://cdn.cocoapods.org/'
+source 'https://landal:gldt-SoFufyxzHFqfJiPF553Y@gitlab.com/claysolutions/public/clay-sdk-artefacts'
+
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
@@ -38,6 +41,8 @@ target 'RNSaltoTest' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+
+  pod 'ClaySDK', :git => 'https://gitlab.com/claysolutions/public/clay-sdk-artefacts', :tag => '2.0.1'
 
   target 'RNSaltoTestTests' do
     inherit! :complete

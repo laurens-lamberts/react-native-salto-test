@@ -1,5 +1,7 @@
 PODS:
   - boost (1.83.0)
+  - ClaySDK (2.0.1):
+    - VirgilCrypto (= 6.1.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.73.1)
@@ -1112,10 +1114,18 @@ PODS:
     - React-logger (= 0.73.1)
     - React-perflogger (= 0.73.1)
   - SocketRocket (0.6.1)
+  - VirgilCrypto (6.1.0):
+    - VirgilCryptoFoundation (= 0.16.3)
+  - VirgilCryptoFoundation (0.16.3):
+    - VSCCrypto/Common (= 0.16.3)
+    - VSCCrypto/Foundation (= 0.16.3)
+  - VSCCrypto/Common (0.16.3)
+  - VSCCrypto/Foundation (0.16.3)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - ClaySDK (from `https://gitlab.com/claysolutions/public/clay-sdk-artefacts`, tag `2.0.1`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -1204,10 +1214,16 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - VirgilCrypto
+    - VirgilCryptoFoundation
+    - VSCCrypto
 
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  ClaySDK:
+    :git: https://gitlab.com/claysolutions/public/clay-sdk-artefacts
+    :tag: 2.0.1
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -1304,8 +1320,14 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  ClaySDK:
+    :git: https://gitlab.com/claysolutions/public/clay-sdk-artefacts
+    :tag: 2.0.1
+
 SPEC CHECKSUMS:
   boost: 26fad476bfa736552bbfa698a06cc530475c1505
+  ClaySDK: c94808918168f3734ab1d84207b9aa25b4a1268e
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   FBLazyVector: 2296bacb2fa157a43991048b0a9d71c1c8b65083
@@ -1365,8 +1387,11 @@ SPEC CHECKSUMS:
   React-utils: debda2c206770ee2785bdebb7f16d8db9f18838a
   ReactCommon: ddb128564dcbfa0287d3d1a2d10f8c7457c971f6
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  VirgilCrypto: 23dd54e1392225ccb008a47e603957b9d8811573
+  VirgilCryptoFoundation: 805e461715e5fe52190060699e6cc5e2e173d37f
+  VSCCrypto: 55392d805fb1d881f9fe45a3e295c983af1cde1d
   Yoga: 2b33a7ac96c58cdaa7b810948fc6a2a76ed2d108
 
-PODFILE CHECKSUM: 76b2398fa04a7a4297548a556a6931cd8a437680
+PODFILE CHECKSUM: dade3590664a2a7e3e01f49291d59062d0dffaf6
 
 COCOAPODS: 1.14.3
