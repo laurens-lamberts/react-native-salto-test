@@ -1114,6 +1114,7 @@ PODS:
     - React-logger (= 0.73.1)
     - React-perflogger (= 0.73.1)
   - SocketRocket (0.6.1)
+  - SwiftKeychainWrapper (4.0.1)
   - VirgilCrypto (6.1.0):
     - VirgilCryptoFoundation (= 0.16.3)
   - VirgilCryptoFoundation (0.16.3):
@@ -1197,6 +1198,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - SwiftKeychainWrapper
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1214,6 +1216,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SwiftKeychainWrapper
     - VirgilCrypto
     - VirgilCryptoFoundation
     - VSCCrypto
@@ -1387,11 +1390,12 @@ SPEC CHECKSUMS:
   React-utils: debda2c206770ee2785bdebb7f16d8db9f18838a
   ReactCommon: ddb128564dcbfa0287d3d1a2d10f8c7457c971f6
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   VirgilCrypto: 23dd54e1392225ccb008a47e603957b9d8811573
   VirgilCryptoFoundation: 805e461715e5fe52190060699e6cc5e2e173d37f
   VSCCrypto: 55392d805fb1d881f9fe45a3e295c983af1cde1d
   Yoga: 2b33a7ac96c58cdaa7b810948fc6a2a76ed2d108
 
-PODFILE CHECKSUM: dade3590664a2a7e3e01f49291d59062d0dffaf6
+PODFILE CHECKSUM: a77f4e3c4c2a575a724e344ad786c865c64a203e
 
 COCOAPODS: 1.14.3

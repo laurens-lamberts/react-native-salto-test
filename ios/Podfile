@@ -42,11 +42,30 @@ target 'RNSaltoTest' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'SwiftKeychainWrapper'
   pod 'ClaySDK', :git => 'https://gitlab.com/claysolutions/public/clay-sdk-artefacts', :tag => '2.0.1'
 
   target 'RNSaltoTestTests' do
     inherit! :complete
     # Pods for testing
+  end
+
+  # @Jakov, below pre_install stage is required to build the Salto- and VirgilCrypto frameworks as dynamic frameworks
+  $dynamic_frameworks = ['VirgilCryptoFoundation', 'VSCCrypto', 'VirgilCrypto',  'ClaySDK']
+  pre_install do |installer|
+    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+    puts "Setting the following dependencies as static/dynamic frameworks:"
+    installer.pod_targets.each do |pod|
+      if $dynamic_frameworks.any? {|name| pod.name.start_with?(name)}
+      puts " * " + pod.name + " (dynamic)"
+        def pod.build_as_dynamic_framework?;
+          true
+        end
+        def pod.build_type;
+          Pod::BuildType.dynamic_framework
+        end
+      end
+    end
   end
 
   post_install do |installer|

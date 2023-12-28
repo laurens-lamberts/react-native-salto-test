@@ -12,6 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		6140EAD52B3DD456000883E6 /* OpenDoorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140EAD02B3DD456000883E6 /* OpenDoorDelegate.swift */; };
+		6140EAD62B3DD456000883E6 /* RNSaltoKS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140EAD12B3DD456000883E6 /* RNSaltoKS.swift */; };
+		6140EAD72B3DD456000883E6 /* RNSaltoKSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140EAD22B3DD456000883E6 /* RNSaltoKSBridge.m */; };
+		6140EADD2B3DD76A000883E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140EADC2B3DD76A000883E6 /* File.swift */; };
 		7699B88040F8A987B510C191 /* libPods-RNSaltoTest-RNSaltoTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNSaltoTest-RNSaltoTestTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -41,6 +45,11 @@
 		5709B34CF0A7D63546082F79 /* Pods-RNSaltoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSaltoTest.release.xcconfig"; path = "Target Support Files/Pods-RNSaltoTest/Pods-RNSaltoTest.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNSaltoTest-RNSaltoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSaltoTest-RNSaltoTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RNSaltoTest-RNSaltoTestTests/Pods-RNSaltoTest-RNSaltoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNSaltoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNSaltoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6140EAD02B3DD456000883E6 /* OpenDoorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorDelegate.swift; sourceTree = "<group>"; };
+		6140EAD12B3DD456000883E6 /* RNSaltoKS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNSaltoKS.swift; sourceTree = "<group>"; };
+		6140EAD22B3DD456000883E6 /* RNSaltoKSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSaltoKSBridge.m; sourceTree = "<group>"; };
+		6140EADC2B3DD76A000883E6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6140EADE2B3DD7EE000883E6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNSaltoTest/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNSaltoTest-RNSaltoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSaltoTest-RNSaltoTestTests.release.xcconfig"; path = "Target Support Files/Pods-RNSaltoTest-RNSaltoTestTests/Pods-RNSaltoTest-RNSaltoTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -106,6 +115,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6140EACF2B3DD456000883E6 /* RCTSalto */ = {
+			isa = PBXGroup;
+			children = (
+				6140EAD02B3DD456000883E6 /* OpenDoorDelegate.swift */,
+				6140EAD12B3DD456000883E6 /* RNSaltoKS.swift */,
+				6140EAD22B3DD456000883E6 /* RNSaltoKSBridge.m */,
+				6140EADC2B3DD76A000883E6 /* File.swift */,
+			);
+			path = RCTSalto;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +136,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6140EACF2B3DD456000883E6 /* RCTSalto */,
 				13B07FAE1A68108700A75B9A /* RNSaltoTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNSaltoTestTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6140EADE2B3DD7EE000883E6 /* Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -394,6 +416,10 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				6140EADD2B3DD76A000883E6 /* File.swift in Sources */,
+				6140EAD52B3DD456000883E6 /* OpenDoorDelegate.swift in Sources */,
+				6140EAD72B3DD456000883E6 /* RNSaltoKSBridge.m in Sources */,
+				6140EAD62B3DD456000883E6 /* RNSaltoKS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNSaltoTest-RNSaltoTestTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -439,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNSaltoTest-RNSaltoTestTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNSaltoTestTests/Info.plist;
@@ -481,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNSaltoTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -508,6 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNSaltoTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
