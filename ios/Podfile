@@ -1,5 +1,5 @@
 source 'https://cdn.cocoapods.org/'
-source 'https://landal:gldt-SoFufyxzHFqfJiPF553Y@gitlab.com/claysolutions/public/clay-sdk-artefacts'
+source 'https://user:secret@gitlab.com/claysolutions/public/clay-sdk-artefacts'
 
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
