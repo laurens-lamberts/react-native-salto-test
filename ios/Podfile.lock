@@ -1,7 +1,7 @@
 PODS:
   - boost (1.83.0)
-  - ClaySDK (2.0.1):
-    - VirgilCrypto (= 6.1.0)
+  - ClaySDK (2.0.2):
+    - VirgilCrypto (= 7.0.1)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.73.1)
@@ -1114,19 +1114,18 @@ PODS:
     - React-logger (= 0.73.1)
     - React-perflogger (= 0.73.1)
   - SocketRocket (0.6.1)
-  - SwiftKeychainWrapper (4.0.1)
-  - VirgilCrypto (6.1.0):
-    - VirgilCryptoFoundation (= 0.16.3)
-  - VirgilCryptoFoundation (0.16.3):
-    - VSCCrypto/Common (= 0.16.3)
-    - VSCCrypto/Foundation (= 0.16.3)
-  - VSCCrypto/Common (0.16.3)
-  - VSCCrypto/Foundation (0.16.3)
+  - VirgilCrypto (7.0.1):
+    - VirgilCryptoFoundation (= 0.17.1)
+  - VirgilCryptoFoundation (0.17.1):
+    - VSCCrypto/Common (= 0.17.1)
+    - VSCCrypto/Foundation (= 0.17.1)
+  - VSCCrypto/Common (0.17.1)
+  - VSCCrypto/Foundation (0.17.1)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
-  - ClaySDK (from `https://gitlab.com/claysolutions/public/clay-sdk-artefacts`, tag `2.0.1`)
+  - ClaySDK (from `https://gitlab.com/claysolutions/public/clay-sdk-artefacts`, tag `2.0.2`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -1198,7 +1197,6 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - SwiftKeychainWrapper
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1216,7 +1214,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - SwiftKeychainWrapper
     - VirgilCrypto
     - VirgilCryptoFoundation
     - VSCCrypto
@@ -1226,7 +1223,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   ClaySDK:
     :git: https://gitlab.com/claysolutions/public/clay-sdk-artefacts
-    :tag: 2.0.1
+    :tag: 2.0.2
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -1326,11 +1323,11 @@ EXTERNAL SOURCES:
 CHECKOUT OPTIONS:
   ClaySDK:
     :git: https://gitlab.com/claysolutions/public/clay-sdk-artefacts
-    :tag: 2.0.1
+    :tag: 2.0.2
 
 SPEC CHECKSUMS:
   boost: 26fad476bfa736552bbfa698a06cc530475c1505
-  ClaySDK: c94808918168f3734ab1d84207b9aa25b4a1268e
+  ClaySDK: f7ca113f8d3f22dcd50d9bb41134c4babdd7db63
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   FBLazyVector: 2296bacb2fa157a43991048b0a9d71c1c8b65083
@@ -1390,12 +1387,11 @@ SPEC CHECKSUMS:
   React-utils: debda2c206770ee2785bdebb7f16d8db9f18838a
   ReactCommon: ddb128564dcbfa0287d3d1a2d10f8c7457c971f6
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
-  VirgilCrypto: 23dd54e1392225ccb008a47e603957b9d8811573
-  VirgilCryptoFoundation: 805e461715e5fe52190060699e6cc5e2e173d37f
-  VSCCrypto: 55392d805fb1d881f9fe45a3e295c983af1cde1d
+  VirgilCrypto: 66f971b18ee7f00890ab8e81fd1c9a1852145a73
+  VirgilCryptoFoundation: f6ed7b0447f0eac9f5cd9a8b3b9756691d78c2f8
+  VSCCrypto: 52f9ba06701cc19b8285b44659cccb48b6e7ceb0
   Yoga: 2b33a7ac96c58cdaa7b810948fc6a2a76ed2d108
 
-PODFILE CHECKSUM: a77f4e3c4c2a575a724e344ad786c865c64a203e
+PODFILE CHECKSUM: 063330997b058043006d20bb6388f32b1999565d
 
 COCOAPODS: 1.14.3
